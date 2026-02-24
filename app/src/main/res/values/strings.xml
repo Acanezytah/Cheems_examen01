@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cheems</string>
+    <string name="Restart">Restart</string>
+    <string name="Welcome">Welcome dab</string>
+    <string name="lose">loser haha! Try again</string>
+    <string name="cheems_master">You found the cheems master!</string>
+    <string name="win">You win! You are a pro</string>
+</resources>

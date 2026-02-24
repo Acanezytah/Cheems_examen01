@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cheems</string>
+    <string name="Restart">Reiniciar</string>
+    <string name="Welcome">Bienvenido dab</string>
+    <string name="lose">Perdedor jaja! Intenta de nuevo</string>
+    <string name="cheems_master">Encontraste al cheems master!</string>
+    <string name="win">Ganaste! Eres un pro</string>
+</resources>
