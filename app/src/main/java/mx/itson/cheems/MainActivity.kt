@@ -1,5 +1,6 @@
 package mx.itson.cheems
 
+import android.Manifest
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
@@ -11,6 +12,7 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.annotation.RequiresPermission
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     //Función para que vibre
 
+    @RequiresPermission(Manifest.permission.VIBRATE)
     fun vibrate(){
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             // Si la versión del sistema operativo instalado en el teléfono es igual o mayor a Android 12 (API 31)
@@ -129,7 +132,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 vibrate()
 
                 Toast.makeText(this,
-                    getString(R.string.chemms_master),
+                    getString(R.string.cheems_master),
                     Toast.LENGTH_LONG).show()
 
                 for(i in 1 .. 12){
